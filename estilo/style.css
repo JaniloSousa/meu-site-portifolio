@@ -58,6 +58,10 @@ body {
   padding-right: 10px;
 }
 
+strong {
+    color: orange;
+}
+
 /* Estilizando o header */
 
 header {

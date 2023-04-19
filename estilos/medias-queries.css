@@ -8,11 +8,12 @@
     }
 
     nav {
-        padding: 15px;
+        padding-left: 25px;
+        display: block;
     }
 
     nav a {
-        display: inline;
+        display: inline-block;
         padding: 17px 20px 16px 20px;
         border: none;
         margin: 0;
@@ -30,11 +31,12 @@
     }
 
     nav {
-        padding: 15px;
+        padding-left: 25px;
+        display: block;
     }
 
     nav a {
-        display: inline;
+        display: inline-block;
         padding: 17px 20px 16px 20px;
         border: none;
         margin: 0;
@@ -52,11 +54,12 @@
     }
 
     nav {
-        padding: 15px 15px 15px 50px;
+        padding-left: 25px;
+        display: block;
     }
 
     nav a {
-        display: inline;
+        display: inline-block;
         padding: 17px 20px 16px 20px;
         border: none;
         margin: 0;
