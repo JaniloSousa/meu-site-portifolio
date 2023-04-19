@@ -83,6 +83,7 @@ header h2 {
 
 nav {
     background-color: #464646;
+    display: none;
 }
 
 nav > a {
@@ -105,6 +106,23 @@ nav > a {
 nav > a:hover {
     background-color: rgb(56, 56, 56);
     color: #8dc28d;
+}
+
+span#burguer {
+    padding: 12px 15px 12px 15px;
+    background-color: #464646;
+    display: block;
+    text-align: center;
+    cursor: pointer;
+}
+
+span#burguer:hover {
+    padding: 12px 15px 12px 15px;
+    background-color: rgb(56, 56, 56);
+    color: #8dc28d;
+    display: block;
+    text-align: center;
+    cursor: pointer;
 }
 
 /* Estilizando o main */

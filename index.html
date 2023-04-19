@@ -19,12 +19,13 @@
 
 </head>
 
-<body>
+<body onresize="mudouTamanho()">
     <header>
         <h1>JANILO</h1>
         <h2>DESENVOLVEDOR WEB FULL-STACK</h2>
     </header>
-    <nav>
+    <span class="material-symbols-sharp" class="icon" id="burguer" onclick="clickMenu()">menu</span>
+    <nav id="itens">
         <a href="#">Sobre Mim</a>
         <a href="#">Habilidades</a>
         <a href="#">Projetos</a>
@@ -116,6 +117,8 @@
     <footer>
         <p>Criado por Janilo Sousa</p>
     </footer>
+
+    <script src="scripts/script.js"></script>
 </body>
 
 </html>
