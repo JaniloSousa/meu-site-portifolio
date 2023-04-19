@@ -1,17 +1,8 @@
 @charset "UTF-8";
+
 /* VERSÃO PARA MOBILE FIRST */
 
-/* Sessão das minhas variáveis */
-:root {
-    --cinza-claro: #464646;
-    --cinza-escuro: #202020;
-    --verde-escuro: #005c00;
-    --verde-claro: #77bd77;
-    --azul: #7195d8;
-}
-
 /* Minhas fontes */
-
 @font-face {
     font-family: 'Tech';
     src: url("../fontes/tech.ttf") format("truetype");
@@ -23,14 +14,20 @@
     font-weight: normal;
 }
 
-/* Minhas variáveis */
-
+/* Sessão das minhas variáveis */
 :root {
+    /* MINHAS CORES */
+    --cinza-claro: #464646;
+    --cinza-escuro: #202020;
+    --verde-escuro: #005c00;
+    --verde-claro: #77bd77;
+    --azul: #7195d8;
+
+    /* MINHAS FONTES */
     --font-tech: 'Tech';
     --font-normal: Verdana, Geneva, Tahoma, sans-serif;
     --font-bit: 'Bit';
 }
-
 
 /* Configurações gerais */
 * {
@@ -49,6 +46,7 @@ body {
     font-family: var(--font-normal);
 }
 
+/* ícones do Google */
 .material-symbols-sharp {
   font-variation-settings:
   'FILL' 1,
@@ -63,7 +61,6 @@ strong {
 }
 
 /* Estilizando o header */
-
 header {
     background-image: linear-gradient(225deg, #005c00, #7195d8);
     text-align: center;
@@ -84,7 +81,6 @@ header h2 {
 }
 
 /* Estilizando a nav */
-
 nav {
     background-color: #464646;
     display: none;
@@ -130,7 +126,6 @@ span#burguer:hover {
 }
 
 /* Estilizando o main */
-
 main {
     max-width: 900px;
     background-color: #202020;
@@ -142,10 +137,10 @@ main {
 }
 
 /* Estilizando o article */
-
 article {
     font-family: Arial, Helvetica, sans-serif;
     line-height: 2.2em;
+    text-shadow: 2px 2px 1px black;
 }
 
 article img.icon {
@@ -221,15 +216,23 @@ article section div.projeto {
     background-color: var(--cinza-claro);
     margin: 0px 10px;
     margin-bottom: 15px;
-    border-radius: 15px;
+    border-radius: 10px;
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.719);
     transition: 0.5s;
+    text-shadow: 2px 2px 1px black;
 }
 
 article section div.projeto img {
     width: 100%;
     margin: 0;
     margin: 10px 0;
+}
+
+article section div.projeto img.projeto-img {
+    width: 240px;
+    height: 240px;
+    border-radius: 10px;
+    box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.247);
 }
 
 article section div.projeto h3 {
@@ -241,6 +244,10 @@ article section div.projeto h3 {
     color: var(--verde);
     text-shadow: 2px 2px 1px black;
     margin: 10px 0;
+}
+
+article section div.projeto h3 a {
+    color: white;
 }
 
 article section div.projeto p {
@@ -267,7 +274,6 @@ article section div.projeto img.icon {
 }
 
 /* Estilizando o footer */
-
 footer {
     background-color: #005c00;
     padding: 10px;
