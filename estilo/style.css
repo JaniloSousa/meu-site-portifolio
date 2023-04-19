@@ -1,6 +1,14 @@
 @charset "UTF-8";
-
 /* VERSÃO PARA MOBILE FIRST */
+
+/* Sessão das minhas variáveis */
+:root {
+    --cinza-claro: #464646;
+    --cinza-escuro: #202020;
+    --verde-escuro: #005c00;
+    --verde-claro: #77bd77;
+    --azul: #7195d8;
+}
 
 /* Minhas fontes */
 
@@ -53,7 +61,7 @@ body {
 /* Estilizando o header */
 
 header {
-    background-image: linear-gradient(225deg, #005c00, rgb(113, 149, 216));
+    background-image: linear-gradient(225deg, #005c00, #7195d8);
     text-align: center;
     padding: 10px;
     text-shadow: 2px 2px 1px black;
@@ -74,8 +82,7 @@ header h2 {
 /* Estilizando a nav */
 
 nav {
-    background-color: rgb(70, 70, 70);
-    padding: 10px;
+    background-color: #464646;
 }
 
 nav > a {
@@ -88,6 +95,9 @@ nav > a {
     font-weight: lighter;
     font-size: 1.2em;
     text-shadow: 2px 2px 1px black;
+    display: block;
+    text-align: center;
+    border-top: 1px solid rgba(255, 255, 255, 0.123);
 
     transition: 0.5s;
 }
@@ -101,7 +111,7 @@ nav > a:hover {
 
 main {
     max-width: 900px;
-    background-color: rgb(32, 32, 32);
+    background-color: #202020;
     margin: 0 auto 80px auto;
     padding: 20px;
     box-shadow: 1px 5px 10px rgba(0, 0, 0, 0.459);
@@ -186,7 +196,7 @@ article section div.projeto {
     width: 240px;
     text-align: center;
     padding: 20px;
-    background-color: rgb(59, 59, 59);
+    background-color: var(--cinza-claro);
     margin: 0px 10px;
     margin-bottom: 15px;
     border-radius: 15px;
@@ -202,7 +212,12 @@ article section div.projeto img {
 
 article section div.projeto h3 {
     margin: 0;
-    font-size: 1.5em;
+    font-size: 1.8em;
+    font-family: var(--font-bit);
+    text-transform: uppercase;
+    font-weight: normal;
+    color: var(--verde);
+    text-shadow: 2px 2px 1px black;
     margin: 10px 0;
 }
 
@@ -214,13 +229,19 @@ article section div.projeto p {
 }
 
 article section div.projeto a {
-    color: #8dc28d;
+    color: var(--verde-claro);
     text-decoration: none;
     font-size: 0.9em;
 }
 
 article section div.projeto a:hover {
     text-decoration: underline;
+}
+
+article section div.projeto img.icon {
+    width: 20px;
+    margin: 0;
+    padding-right: 10px;
 }
 
 /* Estilizando o footer */
