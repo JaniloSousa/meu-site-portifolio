@@ -1,0 +1,180 @@
+/* Minhas fontes */
+
+@font-face {
+    font-family: 'Tech';
+    src: url("../fontes/tech.ttf") format("truetype");
+    font-weight: normal;
+}
+@font-face {
+    font-family: 'Bit';
+    src: url("../fontes/bit.ttf") format("truetype");
+    font-weight: normal;
+}
+
+/* Minhas variáveis */
+
+:root {
+    --font-tech: 'Tech';
+    --font-normal: Verdana, Geneva, Tahoma, sans-serif;
+    --font-bit: 'Bit';
+}
+
+
+/* Configurações gerais */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: lightgray;
+    background-image: url("../imagens/tech-wallpaper.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    color: white;
+    font-family: var(--font-normal);
+}
+
+.material-symbols-sharp {
+  font-variation-settings:
+  'FILL' 1,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 48
+}
+
+/* Estilizando o header */
+
+header {
+    background-image: linear-gradient(225deg, #005c00, rgb(113, 149, 216));
+    text-align: center;
+    padding: 10px;
+    text-shadow: 2px 2px 1px black;
+}
+
+header h1 {
+    font-family: var(--font-tech);
+    font-size: 4em;
+}
+
+header h2 {
+    font-family: var(--font-bit);
+    font-weight: lighter;
+    font-style: italic;
+    font-size: 2em;
+}
+
+/* Estilizando a nav */
+
+nav {
+    background-color: rgb(70, 70, 70);
+    padding: 10px;
+}
+
+nav > a {
+    color: white;
+    text-decoration: none;
+    padding: 12px 15px 12px 15px;
+    font-weight: lighter;
+    font-family: var(--font-bit);
+    text-transform: uppercase;
+    font-weight: lighter;
+    font-size: 1.2em;
+    text-shadow: 2px 2px 1px black;
+
+    transition: 0.5s;
+}
+
+nav > a:hover {
+    background-color: rgb(56, 56, 56);
+    color: #8dc28d;
+}
+
+/* Estilizando o main */
+
+main {
+    max-width: 900px;
+    background-color: rgb(32, 32, 32);
+    margin: 0 auto 80px auto;
+    padding: 20px;
+    box-shadow: 1px 5px 10px rgba(0, 0, 0, 0.459);
+    border-radius: 0 0 10px 10px;
+    padding-bottom: 80px;
+}
+
+/* Estilizando o article */
+
+article {
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 2.2em;
+}
+
+article img.icon {
+    width: 20px;
+    margin: 0;
+    padding: 0;
+}
+
+article h2#primeiro {
+    margin-top: 0;
+}
+
+article h2{
+    text-transform: uppercase;
+    font-family: var(--font-bit);
+    font-weight: normal;
+    background-image: linear-gradient(to right, #005c00, transparent);
+    padding: 9px 0px 5px 10px;
+    text-shadow: 2px 2px 1px black;
+    font-size: 2em;
+}
+
+article h2, h3, p {
+    margin: 30px 0;
+}
+
+article img {
+    margin: 30px 0;
+}
+
+article img#janilo {
+    width: 300px;
+    border-radius: 300px;
+    display: block;
+    margin: auto;
+}
+
+article ul#skills {
+    list-style-position: inside;
+    columns: 2;
+    list-style-type: none;
+    padding: 0 30px;
+}
+
+article img.icon {
+    padding-right: 10px;
+}
+
+article p {
+    text-align: justify;
+    text-indent: 40px;
+}
+
+article ul#contatos {
+    list-style-type: none;
+    list-style-position: inside;
+    padding: 0 30px;
+}
+
+/* Estilizando o footer */
+
+footer {
+    background-color: #005c00;
+    padding: 10px;
+    text-align: center;
+    font-size: 0.8em;
+    font-style: italic;
+    text-shadow: 2px 2px 1px black;
+}
