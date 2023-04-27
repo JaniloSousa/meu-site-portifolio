@@ -37,6 +37,7 @@
 
 body {
     background-color: lightgray;
+    background-image: url('../imagens/tech-wallpaper.jpg');
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
