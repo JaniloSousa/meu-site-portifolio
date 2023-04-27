@@ -199,6 +199,7 @@ section#formacao {
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-wrap: wrap;
 }
 
 section > div#info > ul {
@@ -224,6 +225,23 @@ section > div#imagem {
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.719);
 }
 
+/* sessão dos meus certificados */
+section#certificados > ul {
+    list-style-type: none;
+    padding: 0px 30px;
+}
+
+section#certificados > ul > li> a {
+    text-decoration: none;
+    color: white;
+}
+
+section#certificados > ul > li> a:hover {
+    text-decoration: underline;
+}
+
+/* sessão dos meus contatos */
+
 article ul#contatos {
     list-style-type: none;
     list-style-position: inside;
@@ -231,7 +249,7 @@ article ul#contatos {
 }
 
 /* Estilizando a sessão dos projetos */
-article section {
+article section#projetos {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
