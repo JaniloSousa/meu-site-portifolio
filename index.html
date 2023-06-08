@@ -18,20 +18,27 @@
     <!-- link para outros tipos de tela -->
     <link rel="stylesheet" href="estilos/medias-queries.css">
 
+    <!-- link do font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
 </head>
 
 <body onresize="mudouTamanho()" onload="carregou()">
     <header>
-        <h1>JANILO</h1>
-        <h2>DESENVOLVEDOR WEB FULL-STACK</h2>
+        <a href="#">
+            <h1>JANILO</h1>
+            <h2>DESENVOLVEDOR WEB FULL-STACK</h2>
+        </a>
     </header>
     <span class="material-symbols-sharp" class="icon" id="burguer" onclick="clickMenu()">menu</span>
     <nav id="itens">
-        <a href="#">Sobre Mim</a>
-        <a href="#">Habilidades</a>
-        <a href="#">Projetos</a>
-        <a href="#">Experiencias</a>
-        <a href="#">Contatos</a>
+        <a href="#primeiro">Sobre Mim</a>
+        <a href="#habilidades">Habilidades</a>
+        <a href="#projetos">Projetos</a>
+        <a href="#experiencias">Experiencias</a>
+        <a href="#formacao">Formacao</a>
+        <a href="#certificados">Certificados</a>
+        <a href="#contatos">Contatos</a>
     </nav>
     <main>
         <article>
@@ -39,7 +46,7 @@
             <p>Apaixonado por tecnologia des dos 15 anos de idade &#x1F913;, não tem uma área sequer desse vasto mundo que não chame a atenção de meu olhar curioso &#X1F440;, porém estou com mais foco atualmente em desenvolvimento de <strong>aplicações web</strong> (web-sites) tanto no lado de <strong>front-end</strong> quanto no lado de <strong>back-end</strong>. Garoto sonhador, que está sempre buscando conhecimento e se aperfeiçar com novas ferramentas emergentes para estar cada vez mais qualificado para o mercado de trabalho &#x1FAE1;.</p>
             <img src="imagens/eu2.jpg" alt="Minha foto" id="janilo">
 
-            <h2>Habilidades:</h2>
+            <h2 id="habilidades">Habilidades:</h2>
             <ul id="skills">
                 <li><img src="imagens/html-icon.png" alt="Ícone da HTML" class="icon">HTML5</li>
                 <li><img src="imagens/css-icon.png" alt="Ícone das CSS" class="icon">CSS3</li>
@@ -53,31 +60,25 @@
                 <li><img src="imagens/django-icon.png" alt="Ícone do Django" class="icon">Django</li>
                 <li><img src="imagens/api-icon.png" alt="Ícone da API" class="icon">API's</li>
             </ul>
+
             <h2>Projetos:</h2>
             <section id="projetos">
+
                 <div class="projeto">
-                    <a href="https://janilosousa.github.io/site-beatles-responsivo/" target="_blank">
-                        <img src="imagens/projeto-site-beatles.jpg" alt="Foto ilustrativa do projeto" class="projeto-img">
-                    </a>
+                    <img src="imagens/projeto-site-beatles.jpg" alt="Foto ilustrativa do projeto" class="projeto-img">
 
                     <h3>
-                        <a href="https://janilosousa.github.io/site-beatles-responsivo/" target="_blank">
-                            Voce Conhece os Beatles?
-                        </a>
+                        Voce Conhece os Beatles?
                     </h3>
                     <p>
                         Site que básico que fiz para treinar <strong>html básico</strong>: hierarquia de títulos, parágrafos, inserção de imagens e vídeos, listas e emojis e também css básico. O site conta com dicas simples para dar seus primeiros passos na construção de <strong>sites responsivos</strong>.
                     </p>
 
-                    <img src="imagens/github-icon.png" alt="Ícone do GitHub" class="icon">
-                    <a href="https://github.com/JaniloSousa/site-beatles-responsivo" target="_blank">
-                        Código no GitHub
-                    </a><br>
-
-                    <img src="imagens/youtube-icon.png" alt="Ícone do YouTube" class="icon">
-                    <a href="#">
-                        Vídeo demonstrativo
+                    <a href="#" class="see">
+                        <span class="fas fa-link"></span>
+                        Visualizar
                     </a>
+
                 </div>
 
                 <div class="projeto">
@@ -94,15 +95,7 @@
                         Em todos os meus projetos procuro fazer eles baseados em temas que gosto e que fazem parte da cultura popular. Nesse projeto criei uma espécie de guia turístico para os vários planetas do universo Star Wars com um efeito muito legal e visado pela maiorias dos sites atualmente, que é o <strong>Parallax</strong>.
                     </p>
 
-                    <img src="imagens/github-icon.png" alt="Ícone do GitHub" class="icon">
-                    <a href="https://github.com/JaniloSousa/site-parallax" target="_blank">
-                        Código no GitHub
-                    </a><br>
-
-                    <img src="imagens/youtube-icon.png" alt="Ícone do YouTube" class="icon">
-                    <a href="#">
-                        Vídeo demonstrativo
-                    </a>
+                
                 </div>
 
                 <div class="projeto">
@@ -119,186 +112,14 @@
                         Sistema de cadastro de pessoas feito em python e para rodar na linha de comando(sem interface gráfica). Excelente projeto para quem é <strong>iniciante</strong> e quem terminou de estudar <strong>listas</strong> em python. O programa conta com a opção de <strong>cadastrar</strong>, <strong>excluir</strong> e <strong>listar</strong> as pessoas, faltando apenas a de atualizar para ser mais completo.
                     </p>
 
-                    <img src="imagens/github-icon.png" alt="Ícone do GitHub" class="icon">
-                    <a href="https://github.com/JaniloSousa/Sistema-de-Cadastro-de-Pessoas-em-Arquivo-txt" target="_blank">
-                        Código no GitHub
-                    </a><br>
-
-                    <img src="imagens/youtube-icon.png" alt="Ícone do YouTube" class="icon">
-                    <a href="#">
-                        Vídeo demonstrativo
-                    </a>
-                </div>
-
-                <div class="projeto">
-                    <a href="https://github.com/JaniloSousa/Calculadora-em-Python-Tkinter" target="_blank">
-                        <img src="imagens/projeto-calculadora-python.jpg" alt="Foto ilustrativa do projeto" class="projeto-img">
-                    </a>
-
-                    <h3>
-                        <a href="https://github.com/JaniloSousa/Calculadora-em-Python-Tkinter" target="_blank">
-                            Calculadora em Python
-                        </a>
-                    </h3>
-
-                    <p>
-                        Calculadora feita em Python para rodar em desktops. Excelente projeto para quem acabou de iniciar seus estudos em <strong>GUI</strong>, pois a interface é bem simples. Usei a biblioteca nativa do python <strong>Tkinter</strong> para construir a interface gráfica. É bom para treinar lógica e <strong>Programação Orientada a Objetos</strong> pois cada widget do Tkinter é um <strong>objeto</strong> dessa lib. Também é bom para treinar seu <strong>gerenciador de layout GRID</strong>. Conta com as funções de somar, subtrair, multiplicar, dividir e excluir o último caracter.
-                    </p>
-
-                    <img src="imagens/github-icon.png" alt="Ícone do GitHub" class="icon">
-                    <a href="https://github.com/JaniloSousa/Calculadora-em-Python-Tkinter" target="_blank">
-                        Código no GitHub
-                    </a><br>
-
-                    <img src="imagens/youtube-icon.png" alt="Ícone do YouTube" class="icon">
-                    <a href="#">
-                        Vídeo demonstrativo
-                    </a>
-                </div>
-
-                <div class="projeto">
-                    <a href="https://github.com/JaniloSousa/Bloco-de-notas-feito-em-python-e-tkinter" target="_blank">
-                        <img src="imagens/projeto-bloco-de-notas-python.jpg" alt="Foto ilustrativa do projeto" class="projeto-img">
-                    </a>
-
-                    <h3>
-                        <a href="https://github.com/JaniloSousa/Bloco-de-notas-feito-em-python-e-tkinter" target="_blank">
-                            Dontpad em Python
-                        </a>
-                    </h3>
-                    <p>
-                        Nesse projeto recriei o programa que todo sistema, seja celuar, computador, tablet, tem como padrão... o Notepad, ou bloco de notas. Programei as funções de <strong>abrir</strong>("puxar") o conteúdo de um arquivo já existente, de <strong>salvar</strong> e de <strong>salvar como</strong>. Excelente projeto para treinar as <strong>Filedialogs</strong>.
-                    </p>
-
-                    <img src="imagens/github-icon.png" alt="Ícone do GitHub" class="icon">
-                    <a href="https://github.com/JaniloSousa/Bloco-de-notas-feito-em-python-e-tkinter" target="_blank">
-                        Código no GitHub
-                    </a><br>
-
-                    <img src="imagens/youtube-icon.png" alt="Ícone do YouTube" class="icon">
-                    <a href="#">
-                        Vídeo demonstrativo
-                    </a>
-                </div>
-
-                <div class="projeto">
-                    <a href="https://youtu.be/uH6uTTXsVMA" target="_blank">
-                        <img src="imagens/projeto-crud-python.jpg" alt="Foto ilustrativa do projeto" class="projeto-img">
-                    </a>
-
-                    <h3>
-                        <a href="https://youtu.be/uH6uTTXsVMA" target="_blank">
-                            CRUD em Python
-                        </a>
-                    </h3>
-
-                    <p>
-                        Programa feito em python para rodar em desktops. Representa um sistema escolar aonde se pode cadastrar novos alunos e cursos que poderam ser assistidos por esses alunos. Usei <strong>MySql</strong>, Tkinter, relacionamento entre tabelas e validação de dados.
-                    </p>
-
                     
-                    <img src="imagens/github-icon.png" alt="Ícone do GitHub" class="icon">
-                    <a href="https://github.com/JaniloSousa/CRUD-Sistema-de-Cadastro-Escolar-Alunos-e-Cursos-" target="_blank">
-                        Código no GitHub
-                    </a><br>
-
-                    <img src="imagens/youtube-icon.png" alt="Ícone do YouTube" class="icon">
-                    <a href="https://youtu.be/uH6uTTXsVMA" target="_blank">
-                        Vídeo demonstrativo
-                    </a>
-
                 </div>
-
-                <div class="projeto">
-                    <a href="https://janilosousa.github.io/projeto-tela-login/" target="_blank">
-                        <img src="imagens/projeto-tela-login.jpg" alt="Foto ilustrativa do projeto" class="projeto-img">
-                    </a>
-
-                    <h3>
-                        <a href="https://janilosousa.github.io/projeto-tela-login/" target="_blank">
-                            Tela de Login (HTML + CSS)
-                        </a>
-                    </h3>
-
-                    <p>
-                        Tela de login, 100% responsiva, feita apenas com HTML e CSS. Coloquei os campos de usuário e senha, botão de submit e "esqueci minha senha". Fiz esse projeto para treinar <strong>formulários</strong> em HTML e seus <strong>inputs</strong> e o projeto conta com <strong>animações CSS</strong> bem legais quando ocorre o redimensionamento de tela. Também usei <strong>media queries</strong> para ajudar na responsividade.
-                    </p>
-
-                    
-                    <img src="imagens/github-icon.png" alt="Ícone do GitHub" class="icon">
-                    <a href="https://github.com/JaniloSousa/projeto-tela-login" target="_blank">
-                        Código no GitHub
-                    </a><br>
-
-                    <img src="imagens/youtube-icon.png" alt="Ícone do YouTube" class="icon">
-                    <a href="#">
-                        Vídeo demonstrativo
-                    </a>
-
-                </div>
-
-                <div class="projeto">
-                    <a href="https://github.com/JaniloSousa/cronometro-python" target="_blank">
-                        <img src="imagens/projeto-cronometro-python.png" alt="Foto ilustrativa do projeto" class="projeto-img">
-                    </a>
-
-                    <h3>
-                        <a href="https://github.com/JaniloSousa/cronometro-python" target="_blank">
-                            Cronometro em Python
-                        </a>
-                    </h3>
-
-                    <p>
-                        Cronômetro com as funções de iniciar, pausar e resetar feito em python. Excelente projeto para quem está iniciando. Usei a biblioteca Tkinter para construir a interface gráfica. Também é um excelente projeto pois prescisa de <strong>muita lógica</strong> para ficar atualizando o tempo no visor do programa a todo instante. Nesse tipo de projeto você aprende muito <strong>tratamento de strings</strong>.
-                    </p>
-
-                    
-                    <img src="imagens/github-icon.png" alt="Ícone do GitHub" class="icon">
-                    <a href="https://github.com/JaniloSousa/cronometro-python" target="_blank">
-                        Código no GitHub
-                    </a><br>
-
-                    <img src="imagens/youtube-icon.png" alt="Ícone do YouTube" class="icon">
-                    <a href="#">
-                        Vídeo demonstrativo
-                    </a>
-
-                </div>
-
-                <div class="projeto">
-                    <a href="#" target="_blank">
-                        <img src="imagens/projeto-library-django-cover.png" alt="Foto ilustrativa do projeto" class="projeto-img">
-                    </a>
-
-                    <h3>
-                        <a href="#" target="_blank">
-                            Projeto Livraria (Python + Django)
-                        </a>
-                    </h3>
-
-                    <p>
-                        Fiz este site para treinar os principais conceitos aprendidos por mim em <strong>Django</strong>, como <strong>url</strong>, <strong>views</strong>, <strong>models</strong>, <strong>forms</strong> e <strong>users</strong>. Conta com um sistema de usuários com autenticação, autorização, registros de usuários, login, logout e atualização dos dados do usuário.
-                    </p>
-
-                    
-                    <img src="imagens/github-icon.png" alt="Ícone do GitHub" class="icon">
-                    <a href="#" target="_blank">
-                        Código no GitHub
-                    </a><br>
-
-                    <img src="imagens/youtube-icon.png" alt="Ícone do YouTube" class="icon">
-                    <a href="#">
-                        Vídeo demonstrativo
-                    </a>
-
-                </div>
-
             </section>
 
-            <h2>Experiencias:</h2>
+            <h2 id="experiencias">Experiencias:</h2>
             <p>Atualmente em busca da minha primeira experiência do mercado de trabalho &#x1F60A;.</p>
 
-            <h2>Formacao:</h2>
+            <h2 id="formacao">Formacao:</h2>
 
             <section id="formacao">
                 <div id="info">
@@ -324,7 +145,7 @@
                 </ul>
             </section>
 
-            <h2>Contatos:</h2>
+            <h2 id="contatos">Contatos:</h2>
             <ul id="contatos">
                 <li>
                     <span class="material-symbols-sharp" class="icon">phone_iphone</span>

@@ -35,8 +35,12 @@
     padding: 0;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
-    background-color: rgb(113, 113, 113);
+    background-color: rgb(80, 80, 80);
     color: white;
     font-family: var(--font-normal);
 }
@@ -61,6 +65,11 @@ header {
     text-align: center;
     padding: 10px;
     text-shadow: 2px 2px 1px black;
+}
+
+header a {
+    color: white;
+    text-decoration: none;
 }
 
 header h1 {
@@ -135,7 +144,7 @@ main {
 article {
     font-family: Arial, Helvetica, sans-serif;
     line-height: 2.2em;
-    text-shadow: 2px 2px 1px black;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.487);
 }
 
 article img.icon {
@@ -211,7 +220,7 @@ section > div#imagem {
     float: right;
     width: 40%;
     min-width: 280px;
-    height: 300px;
+    height: 370px;
     background-image: url('../imagens/infinity-school.jpg');
     background-repeat: no-repeat;
     background-position: center center;
@@ -255,14 +264,14 @@ article section#projetos {
 
 article section div.projeto {
     display: inline-block;
-    width: 240px;
+    width: 300px;
     text-align: center;
-    padding: 20px;
+    padding: 20px 20px 15px 20px;
     background-color: #2a2a2a;
     margin: 0px 10px;
     margin-bottom: 15px;
     transition: 0.5s;
-    text-shadow: 2px 2px 1px black;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.504);
 }
 
 article section div.projeto img {
@@ -272,9 +281,8 @@ article section div.projeto img {
 }
 
 article section div.projeto img.projeto-img {
-    width: 240px;
-    height: 240px;
-    box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.247);
+    width: 300px;
+    height: 300px;
 }
 
 article section div.projeto h3 {
@@ -302,9 +310,17 @@ article section div.projeto p {
 }
 
 article section div.projeto a {
-    color: var(--verde-claro);
+    text-decoration: none;
+}
+
+article section div.projeto a.see {
+    color: white;
+    padding: 5px 20px;
+    border-radius: 5px;
+    border: 1px solid white;
     text-decoration: none;
     font-size: 0.9em;
+    display: inline-block;
 }
 
 article section div.projeto a:hover {
@@ -324,5 +340,5 @@ footer {
     text-align: center;
     font-size: 0.8em;
     font-style: italic;
-    text-shadow: 2px 2px 1px black;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.544);
 }
