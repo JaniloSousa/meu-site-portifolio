@@ -65,16 +65,25 @@ header {
     text-align: center;
     padding: 10px;
     text-shadow: 2px 2px 1px black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
 header a {
     color: white;
     text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
 header h1 {
     font-family: var(--font-tech);
     font-size: 2.9em;
+    display: inline-block;
 }
 
 header h2 {
@@ -82,6 +91,7 @@ header h2 {
     font-weight: lighter;
     font-style: italic;
     font-size: 2em;
+    display: inline-block;
 }
 
 /* Estilizando a nav */
@@ -245,8 +255,14 @@ section#certificados > ul > li> a:hover {
     text-decoration: underline;
 }
 
-/* sessão dos meus contatos */
+main section#certificados ul li.certificado {
+    border-left: 2px solid green;
+    padding: 15px 0px 15px 15px;
+    margin-bottom: 20px;
+}
 
+
+/* sessão dos meus contatos */
 article ul#contatos {
     list-style-type: none;
     list-style-position: inside;
@@ -336,7 +352,7 @@ article section div.projeto img.icon {
 /* Estilizando o footer */
 footer {
     background-color: #005c00;
-    padding: 10px;
+    padding: 50px 10px;
     text-align: center;
     font-size: 0.8em;
     font-style: italic;
